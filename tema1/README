@@ -1,0 +1,28 @@
+INIT_DB - Aloca memorie pentru baza de date, iar tabelel vor puncta la NULL.
+
+DELETE_DB - Elibereaza coloanele si liniile din fiecare tabel, iar in cazul in
+	    care acesta contine string-uri va elibera si valoarea din celule.
+
+CREATE - Aloca memorie pentru tabel si coloane si pune in campul de nume,
+	 numele aferente. Leaga tabelul de ultimul tabel din lista.
+
+DELETE - Elibereaza coloanele si liniile din tabel, iar in cazul in care
+ 	 acesta contine string-uri va elibera si valoarea din celule. Face
+	 legatura dintre tabelele ramase.
+
+PRINT_DB - Afiseaza liniile din toate tabele cu spatiile aferente si cu "-".
+
+SEARCH - Primeste un pointer la functie care afiseaza/sterge linia. Cauta 
+	 tabelul corespunzator. Pastreaza numarul coloanei care trebuie sa 
+	 respecte conditia. Cauta coloana respectiva de pe fiecare linie si
+	 verifica daca respecta conditia, in cazul in care o respecta foloseste
+	 pointerul la functie.
+
+ADD - Cauta tabelul in care trebuie adaugata linia. Creeaza linia, in functie
+      de tipul tabelului, ii atribuie valorile(cu atof si atoi pentru tabel cu
+      valori de tip float sau intregi) si o leaga la ultima linie din tabel.
+
+CLEAR - Cauta tabelul in lista de tabele. Distruge liniile in cazul in care
+	acestea exista. Reseteaza liniile, acestea vor puncta la NULL.
+
+
