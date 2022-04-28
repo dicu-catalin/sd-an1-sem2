@@ -1,0 +1,29 @@
+DICU FLORIN CATALIN - 312CB
+Punctaj : 85/85 , 20/20
+
+newtab - Aloca memorie pentru o celula de lista, aloca memorie pentru un
+	 element de tip tab, initializeaza stivele back si forward si seteaza
+	 current_page la NULL.
+
+deltab - Elibereaza paginile web din stivele de back si forward, elibereaza
+	 pagina curenta, distruge stivele back si forward si elibereaza celula.
+
+change_tab - Parcurge lista de taburi si seteaza tabul curent la tabul
+	     corespunzator indicelui primit.
+
+print_open_tabs - Parcurge lista de taburi deschise si afiseaza paginina web
+		  curenta.
+
+goto - Goleste stiva de forward, adauga pagina web din current_page in stiva
+       de back, si schimba pagina curenta la pagina cu url-ul primit, apeland
+       functia care genereaza resursele unei pagini si functia wait pentru 1
+       secunda.
+
+back - Adauga pagina curenta in stiva de forward, iar ultimul element din stiva
+       de back devine pagina curenta.
+
+forward - Adauga pagina curenta in stiva de back, iar ultimul element din stiva
+	  de forward devine pagina curenta.
+
+
+
